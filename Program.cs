@@ -10,4 +10,7 @@ string[] FiltrStrings(string[] array1)
  {
     if(array1[i].Length <= 3) count++;
  }
+
+string[] array2 = new string[count];
+
 }
