@@ -33,3 +33,12 @@ void PrintArray(string[] arr)
         else Console.WriteLine($"{arr[i]}!");
     }
 }
+
+// Console.Write("Введите элементы массива через пробел: ");
+// string[] array1 = Console.ReadLine().Split();
+
+string[] array1 = {"Привет", "Я", "Ты", "Он", "Она", "-", "Мы", "целая", "страна", "Пока", "гуд"};
+string[] array2 = FiltrStrings(array1);
+
+Console.WriteLine("Результат собран из строк по три и менее символов:");
+PrintArray(array2);
