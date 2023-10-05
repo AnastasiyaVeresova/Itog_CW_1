@@ -29,16 +29,16 @@ void PrintArray(string[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1) Console.WriteLine($"{arr[i]}");
-        else Console.WriteLine($"{arr[i]}!");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
     }
 }
 
 // Console.Write("Введите элементы массива через пробел: ");
 // string[] array1 = Console.ReadLine().Split();
 
-string[] array1 = {"Привет", "Я", "Ты", "Он", "Она", "-", "Мы", "целая", "страна", "Пока", "гуд"};
+string[] array1 = {"Привет", "Я", "Ты", "Он", "Она", "Мы", "целая", "страна", "Пока", "гуд"};
 string[] array2 = FiltrStrings(array1);
 
-Console.WriteLine("Результат собран из строк по три и менее символов:");
+Console.WriteLine("Результат собран из строк по три и менее символов: ");
 PrintArray(array2);
