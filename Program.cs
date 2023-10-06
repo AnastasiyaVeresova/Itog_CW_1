@@ -11,8 +11,7 @@ string[] FiltrStrings(string[] array1)
         if (array1[i].Length <= 3) count++;
     }
 
-    if (count >= 1) Console.Write("Результат собран из строк по три и менее символов: ");
-    else Console.WriteLine("В массиве нет строк с заланным условием");
+    Console.Write(count >= 1 ? "Результат собран из строк по три и менее символов: " : "В массиве нет строк с заланным условием");
 
     string[] array2 = new string[count];
     int index = 0;
